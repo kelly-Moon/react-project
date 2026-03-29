@@ -1,4 +1,4 @@
-// border-box 초기화
+/* border-box 초기화 */
 *,
 *:before,
 *:after {
@@ -7,7 +7,7 @@
   box-sizing: border-box;
 }
 
-// 공백 초기화
+/* 공백 초기화 */
 body,
 button,
 dd,
@@ -38,7 +38,7 @@ figcaption {
   padding: 0;
 }
 
-// 폰트 초기화
+/* 폰트 초기화 */
 body,
 button,
 input,
@@ -49,7 +49,7 @@ textarea {
     var(--mainEng-font), var(--mainKor-font), "Apple SD Gothic Neo", "Malgun Gothic", "맑은 고딕", helvetica, sans-serif;
 }
 
-// 링크 초기화
+/* 링크 초기화 */
 a,
 a:hover,
 a:focus {
@@ -57,7 +57,7 @@ a:focus {
   text-decoration: none;
 }
 
-// 스타일 초기화
+/* 스타일 초기화 */
 h1,
 h2,
 h3,
@@ -85,7 +85,7 @@ img {
   width: 100%;
 }
 
-// 스킵메뉴
+/* 스킵메뉴 */
 #skip a {
   position: absolute;
   left: 10px;
