@@ -1,0 +1,135 @@
+#contact {
+  height: 100vh;
+}
+.contact_inner {
+  width: 100%;
+  height: 100%;
+  display: flex;
+
+  justify-content: flex-end;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 16px;
+  @media (max-width: 800px) {
+    justify-content: center;
+  }
+
+  .contact_title {
+    color: var(--black100);
+    font-size: 8vw;
+    text-transform: uppercase;
+    line-height: 1;
+    font-weight: 800;
+    white-space: nowrap; /*글자가 아래도 떨어지지 않게*/
+    text-indent: -0.5vw; /*옆에 여백 없게 만들기 위해서*/
+    letter-spacing: -0.3vw;
+
+    @media (max-width: 800px) {
+      display: none;
+    }
+  }
+  .contact_lines {
+    width: 100%;
+
+    .line {
+      display: block;
+      width: 100%;
+      height: 1px;
+      margin-bottom: 0.5vw;
+      // background: url(/src/assets/img/contact.jpg) center;
+      background-color: var(--black);
+      background-image: url(/img/contact.jpg);
+      background-position: center;
+      background-size: cover;
+      background-attachment: fixed;
+    }
+    &.top {
+      .line {
+        margin-top: 0.5vw;
+        margin-bottom: 0;
+        display: none;
+        @media (max-width: 800px) {
+          display: block;
+        }
+
+        &:nth-child(1) {
+          height: 1px;
+        }
+        &:nth-child(2) {
+          height: 2px;
+        }
+        &:nth-child(3) {
+          height: 5px;
+        }
+        &:nth-child(4) {
+          height: 9px;
+        }
+        &:nth-child(5) {
+          height: 13px;
+        }
+        &:nth-child(6) {
+          height: 17px;
+        }
+        &:nth-child(7) {
+          height: 25px;
+        }
+      }
+    }
+    &.bottom {
+      .line {
+        &:nth-child(1) {
+          height: 25px;
+        }
+        &:nth-child(2) {
+          height: 17px;
+        }
+        &:nth-child(3) {
+          height: 13px;
+        }
+        &:nth-child(4) {
+          height: 9px;
+        }
+        &:nth-child(5) {
+          height: 5px;
+        }
+        &:nth-child(6) {
+          height: 2px;
+        }
+        &:nth-child(7) {
+          height: 1px;
+        }
+      }
+    }
+  }
+  .contact_text {
+    width: 100%;
+    height: 40vh;
+    // background: url(/src/assets/img/contact.jpg) center;
+    background-color: var(--black);
+    background-image: url(/img/contact.jpg);
+    background-position: center;
+    background-size: cover;
+    color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    .text {
+      font-size: 3vw;
+      line-height: 1;
+      font-weight: 900;
+      text-transform: uppercase;
+      text-decoration: underline;
+      text-align: center;
+      position: relative;
+      z-index: 100;
+      transition: all 0.3s;
+      cursor: all-scroll;
+
+      @media (max-width: 800px) {
+        font-size: 24px;
+      }
+    }
+  }
+}
