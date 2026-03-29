@@ -1,7 +1,7 @@
 #port {
-  height: 3000px;
+  // height: 3000px;
   margin-top: 30vh;
-  // overflow: hidden;
+  overflow: hidden;
 }
 
 .port_inner {
@@ -34,11 +34,12 @@
 
   .port_wrap {
     display: flex;
-    flex-wrap: wrap;
-    width: 7000px;
+    flex-wrap: nowrap;
+    // width: 7000px;
 
     .port_item {
       width: 500px;
+      flex-shrink: 0;
       height: 70vh;
       background-color: var(--subBg100);
       padding: 2.5rem;

@@ -1,11 +1,7 @@
 import React from "react";
 
 import about from "../assets/img/about.jpg";
-
-const introText = {
-  title: "Into the Mountains",
-  decs: ["Step by Step", "Toward the Top"],
-};
+import { introText } from "../constants";
 
 const Intro = () => {
   return (

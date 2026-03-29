@@ -1,43 +1,6 @@
 import React from "react";
-import site01 from "../assets/img/site01.jpg";
-import site02 from "../assets/img/site02.jpg";
-import site03 from "../assets/img/site03.jpg";
-import site04 from "../assets/img/site04.jpg";
 
-const siteText = [
-  {
-    img: site01,
-    text: ["Mount Everest", "Nepal Tibe"],
-    title: "지구에서 가장 높은 산",
-    site: "https://www.naver.com/",
-    view: "https://www.daum.net/",
-    info: ["Great Mountains of the World", "Mountains Connect Nature and People", "Why Mountains Matter"],
-  },
-  {
-    img: site02,
-    text: ["Mont Blanc", "rance Italy"],
-    title: "알프스 산맥의 최고봉",
-    site: "https://www.naver.com/",
-    view: "https://www.daum.net/",
-    info: ["Great Mountains of the World", "Mountains Connect Nature and People", "Why Mountains Matter"],
-  },
-  {
-    img: site03,
-    text: ["The Andes", "South America"],
-    title: "세계에서 가장 긴 산맥",
-    site: "https://www.naver.com/",
-    view: "https://www.daum.net/",
-    info: ["Great Mountains of the World", "Mountains Connect Nature and People", "Why Mountains Matter"],
-  },
-  {
-    img: site04,
-    text: ["Mount Fuji", "Japan"],
-    title: "완벽한 원뿔 형태로 유명한 화산",
-    site: "https://www.naver.com/",
-    view: "https://www.daum.net/",
-    info: ["Great Mountains of the World", "Mountains Connect Nature and People", "Why Mountains Matter"],
-  },
-];
+import { siteText } from "../constants";
 
 const Site = () => {
   return (
